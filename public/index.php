@@ -27,13 +27,13 @@
                         </div>
                     </div>
 
-                    <div class = "manufacturer section">
+                    <div class = "section">
                         <div class ="sectionTitle">
                             Manufacturer & Model
                         </div>
                         <div class = "part">
-                            <label class = "manufacturer" for = "model">Manufacturer</label>
-                            <input class = "manufacturer" type = "text" name = "manufacturer" maxlength = "120">
+                            <label for = "model">Manufacturer</label>
+                            <input class = "manufacturer" type = "text" name = "manufacturer" maxlength = "200">
                         </div>
                         <div class = "part">
                             <label for = "model">Model</label>
@@ -320,6 +320,7 @@
                                 <option value="Step Through">Step Through</option>
                                 <option value="Tandem">Tandem</option>
                             </select>
+                            <input type = "text" class = "otherFrameSystem toHide makeBlock" name = "frontDerailleurs" maxlength = "50">
                         </div>
                         <div class = "part fifty">
                             <label for = "frameMaterial">Frame Material</label>
@@ -329,7 +330,8 @@
                                 <option value="Carbon">Carbon</option>
                                 <option value="Steel">Steel</option>
                                 <option value="Titanium">Titanium</option>
-                            </select>   
+                            </select>
+                            <input type = "text" class = "otherFrameMaterial toHide makeBlock" name = "frontDerailleurs" maxlength = "50">
                         </div>
 
                         <div class = "part">
@@ -340,7 +342,8 @@
                                 <option value="Carbon">Carbon</option>
                                 <option value="Steel">Steel</option>
                                 <option value="Titanium">Titanium</option>
-                            </select> 
+                            </select>
+                            <input type = "text" class = "otherForkMaterial toHide makeBlock" name = "frontDerailleurs" maxlength = "50">
                         </div>
                         <div class = "part">
                             <label for = "weight">Weight</label>
@@ -381,7 +384,7 @@
                                 <option value="SRAM">SRAM</option>
                                 <option value="Other">Other</option>
                             </select>
-                            <input type = "text" class = "otherShifterType toHide makeBlock" name = "frontDerailleurs" maxlength = "100">
+                            <input type = "text" class = "otherShifterType toHide makeBlock" name = "frontDerailleurs" maxlength = "80">
                         </div>
                         <div class = "part fifty">
                             <label for = "rearDerailleur">Rear Derailleur Type</label>
@@ -392,7 +395,7 @@
                                 <option value="SRAM">SRAM</option>
                                 <option value="Other">Other</option>
                             </select>
-                            <input type = "text" class = "otherShifterType toHide makeBlock" name = "frontDerailleurs" maxlength = "100">
+                            <input type = "text" class = "otherShifterType toHide makeBlock" name = "frontDerailleurs" maxlength = "80">
                         </div>
                         <div class = "part">
                             <label for = "gears">Gears</label>
@@ -414,7 +417,7 @@
                                 <option value="Thumb">Thumb</option>
                                 <option value="Trigger">Trigger</option>
                             </select>
-                            <input type = "text" class = "otherShifterType toHide makeBlock" name = "frontDerailleurs" maxlength = "100">
+                            <input type = "text" class = "otherShifterType toHide makeBlock" name = "frontDerailleurs" maxlength = "80">
                         </div>
                         <div class = "part fifty">
                             <label for = "shifter">Shifter</label>
@@ -425,7 +428,7 @@
                                 <option value="SRAM">SRAM</option>
                                 <option value="Other">Other</option>
                             </select>
-                            <input type = "text" class = "otherShifter toHide makeBlock" name = "frontDerailleurs" maxlength = "120">                        
+                            <input type = "text" class = "otherShifter toHide makeBlock" name = "frontDerailleurs" maxlength = "80">                        
                         </div>
                         <div class = "part fifty">
                             <label for = "chainSet">Chain Set</label>
@@ -433,11 +436,11 @@
                         </div>
                         <div class = "part fifty">
                             <label for = "chain">Chain</label>
-                            <input class = "chain" type = "text" name = "chain" maxlength = "120">
+                            <input class = "chain" type = "text" name = "chain" maxlength = "80">
                         </div>
                         <div class = "part fifty">
                             <label for = "cassette">Cassette</label>
-                            <input class = "cassette" type = "text" name = "cassette" maxlength = "120">
+                            <input class = "cassette" type = "text" name = "cassette" maxlength = "80">
                         </div>
                         <div class = "part fifty">
                             <label for = "bottomBracket">Bottom Bracket</label>
@@ -447,7 +450,7 @@
                                 <option value="Cartridge">Cartridge </option>
                                 <option value="Other">Other</option>
                             </select>
-                            <input type = "text" class = "otherBottomBracket toHide makeBlock" name = "frontDerailleurs" maxlength = "120">
+                            <input type = "text" class = "otherBottomBracket toHide makeBlock" name = "frontDerailleurs" maxlength = "80">
                         </div>
                     </div>
                 
@@ -457,11 +460,11 @@
                         </div>
                         <div class = "part fifty">
                             <label for = "stem">Stem</label>
-                            <input class = "stem" type = "text" name = "stem" maxlength = "120">  
+                            <input class = "stem" type = "text" name = "stem" maxlength = "80">  
                         </div>
                         <div class = "part fifty">
                             <label for = "headSet">Head Set</label>
-                            <input class = "headSet" type = "text" name = "headSet" maxlength = "120">
+                            <input class = "headSet" type = "text" name = "headSet" maxlength = "80">
                         </div>
                         <div class = "part fifty">
                             <label for = "handleBar">Hande Bars</label>
@@ -475,7 +478,7 @@
                         </div>
                         <div class = "part fifty">
                             <label for = "barTape">Bar Tape</label>
-                            <input class = "barTape" type = "text" name = "barTape" maxlength = "120">
+                            <input class = "barTape" type = "text" name = "barTape" maxlength = "80">
                         </div>
                     </div>
 
@@ -495,11 +498,11 @@
                         </div>
                         <div class = "part fifty">
                             <label for = "brakeLevers">Brake Levers</label>
-                            <input class = "brakeLevers" type = "text" name = "brakeLevers" maxlength = "120">
+                            <input class = "brakeLevers" type = "text" name = "brakeLevers" maxlength = "80">
                         </div>
                         <div class = "part fifty">
                             <label for = "brakes">Brakes</label>
-                            <input class = "brakes" type = "text" name = "brakes" maxlength = "120">
+                            <input class = "brakes" type = "text" name = "brakes" maxlength = "80">
                         </div>
                     </div>
 
@@ -509,19 +512,19 @@
                         </div>
                         <div class = "part fifty">
                             <label for = "wheels">Wheels</label>
-                            <input class = "wheels" type = "text" name = "wheels" maxlength = "120">
+                            <input class = "wheels" type = "text" name = "wheels" maxlength = "80">
                         </div>
                         <div class = "part fifty">
                             <label for = "frontHub">Front Hub</label>
-                            <input class = "frontHub" type = "text" name = "frontHub" maxlength = "120">
+                            <input class = "frontHub" type = "text" name = "frontHub" maxlength = "80">
                         </div>
                         <div class = "part fifty">
                             <label for = "rearHub">Rear Hub</label>
-                            <input class = "rearHub" type = "text" name = "rearHub" maxlength = "120">
+                            <input class = "rearHub" type = "text" name = "rearHub" maxlength = "80">
                         </div>
                         <div class = "part fifty">
                             <label for = "tyres">Tyres</label>
-                            <input class = "tyres" type = "text" name = "tyres" maxlength = "120">
+                            <input class = "tyres" type = "text" name = "tyres" maxlength = "80">
                         </div>
                         <div class = "part">
                             <label for = "tube">Tubes</label>
@@ -531,7 +534,7 @@
                                 <option value="Schrader">Schrader</option>
                                 <option value="Other">Other</option>
                             </select>
-                            <input type = "text" class = "otherTube toHide makeBlock" name = "otherTube" maxlength = "120">
+                            <input type = "text" class = "otherTube toHide makeBlock" name = "otherTube" maxlength = "80">
                         </div>
                     </div>
 
@@ -541,12 +544,12 @@
                         </div>
                         <div class = "part fifty">
                             <label for = "saddle">Saddle</label>
-                            <input class = "saddle" type = "text" name = "saddle" maxlength = "120">
+                            <input class = "saddle" type = "text" name = "saddle" maxlength = "80">
                         </div>
 
                         <div class = "part fifty">
                             <label for = "seatPost">Seat Post</label>
-                            <input class = "seatPost" type = "text" name = "seatPost" maxlength = "120">
+                            <input class = "seatPost" type = "text" name = "seatPost" maxlength = "80">
                         </div>
                     </div>
 
@@ -554,37 +557,30 @@
                         <div class ="sectionTitle">
                             Additional Features
                         </div>
-                        <div class = "additional fifty">
-                            <label for = "lights">Lights</label>
-                            <input type = "checkbox" name = "lights" value = "yes">
-                        </div>
-                        <div class = "additional fifty">
-                            <label for = "tubeless">Tubeless Tyres</label>
-                            <input type = "checkbox" name = "tubeless" value = "yes">
-                        </div>
-                        <div class = "additional fifty">
-                            <label for = "frontRack">Front  Rack</label>
-                            <input type = "checkbox" name = "frontRack" value = "yes">
-                        </div>
-                        <div class = "additional fifty">
-                            <label for = "rearRack">Rear  Rack</label>
-                            <input type = "checkbox" name = "rearRack" value = "yes">
-                        </div>
-                        <div class = "additional fifty">
-                            <label for = "kickStand">Kickstand</label>
-                            <input type = "checkbox" name = "kickStand" value = "yes">
-                        </div>
-                        <div class = "additional fifty">
-                            <label for = "mudGuards">Mud Guards</label>
-                            <input type = "checkbox" name = "mudGuards" value = "yes">
-                        </div>
-                        <div class = "additional fifty">
-                            <label for = "dynamo">Dynamo</label>
-                            <input type = "checkbox" name = "dynamo" value = "yes">
-                        </div>
+
+                        <?php
+                            $additionalFeatures = array("Lights", "Tubeless Tyres", "Internal Cabling", "Front Rack", "Rear Rack", "Kick Stand", "Mud Guards", "Dynamo");
+
+                            foreach ($additionalFeatures as $features) {
+                                $name = str_replace(" ", "", $features);
+                                $name = lcfirst($name);
+                                echo "<div class = 'additionalRadio fifty'>\n";
+                                echo "<label for = '$name'>$features</label>\n";
+                                echo "<div>\n";
+                                echo "<span>Yes</span>\n";
+                                echo "<input type = 'radio' id = '$name' name = '$name' value = 'yes'>\n";
+                                echo "</div>\n";
+                                echo "<div>\n";
+                                echo "<span>No</span>\n";
+                                echo "<input type = 'radio' id = '$name' name = '$name' value = 'no'>\n";
+                                echo "</div>\n";
+                                echo "</div>\n";
+                            }
+                        ?>
+
                         <div class = "additional fifty">
                             <label for = "tyreClearance">Tyre  Clearance</label>
-                            <input type = "text" name = "tyreClearance" maxlength = "10">
+                            <input class = "tyreClearance" type = "text" name = "tyreClearance" maxlength = "20">
                         </div>
                         <div class = "additional fifty">
                             <label for = "bottleHolders">No of bottle holders</label>
@@ -595,6 +591,16 @@
                                 }
                                 ?>
                             </select>
+                        </div>
+                    </div>
+
+                    <div class = "additionalInfo section">
+                        <div class ="sectionTitle">
+                            Additional Information
+                        </div>
+                        <div class = "part">
+                            <label for = "manualInfo">If you have any other information about your bike that doesn't fit in any of the fields above then please use this box to manually enter the details. We will go through this and add and update additional fields above accordingly.</label>
+                            <textarea class = "manualInfo" type = "text" name = "manualInfo" maxlength = "800" ></textarea>
                         </div>
                     </div>
 

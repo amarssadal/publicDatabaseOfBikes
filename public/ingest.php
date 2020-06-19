@@ -3,10 +3,8 @@
     require_once('../private/initialise.php');
     if ( $_SERVER['REQUEST_METHOD'] !== 'POST' ) {
         redirect_to(url_for('/index.php'));
-    }
-
-    if ($_SERVER["REQUEST_METHOD"] === "POST") {
-        // collect value of input field
+    } else {
+         // collect value of input field
         $bikeData['manufacturer'] = $_POST['manufacturer'];
         $bikeData['model'] = $_POST['model'];
         $bikeData['year'] = $_POST['year'];
@@ -33,6 +31,7 @@
         $bikeData['brakeSystem'] = $_POST['brakeSystem'];
         $bikeData['brakeLevers'] = $_POST['brakeLevers'];
         $bikeData['brakes'] = $_POST['brakes'];
+        $bikeData['wheels'] = $_POST['wheels'];
         $bikeData['frontHub'] = $_POST['frontHub'];
         $bikeData['rearHub'] = $_POST['rearHub'];
         $bikeData['tyres'] = $_POST['tyres'];
@@ -40,7 +39,8 @@
         $bikeData['saddle'] = $_POST['saddle'];
         $bikeData['seatPost'] = $_POST['seatPost'];
         $bikeData['lights'] = $_POST['lights'] ?? '';
-        $bikeData['tubeless'] = $_POST['tubeless'] ?? '';
+        $bikeData['tubelessTyres'] = $_POST['tubelessTyres'] ?? '';
+        $bikeData['internalCabling'] = $_POST['internalCabling'] ?? '';
         $bikeData['frontRack'] = $_POST['frontRack'] ?? '';
         $bikeData['rearRack'] = $_POST['rearRack'] ?? '';
         $bikeData['kickStand'] = $_POST['kickStand'] ?? '';
@@ -48,6 +48,14 @@
         $bikeData['dynamo'] = $_POST['dynamo'] ?? '';
         $bikeData['tyreClearance'] = $_POST['tyreClearance'] ?? '';
         $bikeData['bottleHolders'] = $_POST['bottleHolders'];
+        $bikeData['manualInfo'] = $_POST['manualInfo'];
+    }
+
+    $result = addBikeToApprove($bikeData);
+    if ($result === true) {
+        echo "entry sucessful";
+    } else {
+        $error = $result;
     }
 
     $title = 'The public Database of Bikes - Add new Bike';

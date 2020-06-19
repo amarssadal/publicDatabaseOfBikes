@@ -116,21 +116,35 @@
             display: none;
         }
         .fifty {
-            width: 250px;
+            width: 48%;
             display: inline-block;
         }
-        .additional {
+        .additionalRadio {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 3fr 1fr 1fr;
             justify-content: left;
-            margin-top: 5px;
+            margin-top: 15px;
+            input {
+                display: inline-block;
+                width: 20px;
+            }
+            .tyreClearance {
+                width: 100px;
+            }
+        }
+        .additional {
+            margin-top: 20px;
         }
         .additionalFeatures {
             line-height: 25px;
             display: grid;
             grid-template: 1fr 1fr;
         }
-        
+        .manualInfo {
+            width: 96%;
+            height: 200px;
+            resize: none;
+        }
     }
 }
 

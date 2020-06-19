@@ -6,7 +6,6 @@ const validateForm = () => {
     let checks = [
         [1, '.manufacturer'],
         [1, '.model'],
-        [0, '.country'],
         [0, '.frameMaterial'],
         [0, '.forkMaterial'],
         [0, '.weight'],
@@ -14,7 +13,6 @@ const validateForm = () => {
         [0, '.frontDerailleur'],
         [0, '.shifterType'],
         [0, '.shifter'],
-        [1, '.crankset'],
         [1, '.chainSet'],
         [1, '.chain'],
         [1, '.cassette'],
@@ -56,6 +54,7 @@ const validateForm = () => {
             }
         } else if (check[0] === 1) {
             let temp = document.querySelector(check[1]);
+            console.log(temp);
             if (temp.value === '' || regex.test(temp.value)) {
                 if (count === 0) {
                     firstFocus = temp;
